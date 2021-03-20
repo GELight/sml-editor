@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SML - Web-Component - Editor</title>
+
+	<style>
+        :root {
+            --sml-editor-tab-size: 2;
+            --sml-editor-color: #8e9fcd;
+            --sml-editor-bg: linear-gradient(161deg, #333a47 0%, #1c1d24 100%);
+            --sml-editor-border: 2px solid #4f5b70;
+            --sml-editor-padding: .8rem;
+            --sml-editor-max-height: auto;
+            --sml-editor-height: auto;
+            --sml-editor-box-shadow: 0 0 .8rem .8rem rgba(0,0,0,0.75);
+            --sml-editor-text-shadow: 0px 4px 4px rgba(0,0,0,0.85);
+            --sml-editor-font-family: monospace;
+            --sml-editor-font-size: 14px;
+            --sml-editor-line-height: 1.4rem;
+            --sml-editor-font-weight: 400;
+            --sml-editor-font-style: initial;
+            --sml-editor-font-stretch: initial;
+            --sml-editor-letter-spacing: .1rem;
+            --sml-editor-text-transform: initial;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            position: relative;   
+            background-color: #202126;
+            background-image: url(https://wallpaperplay.com/walls/full/9/7/7/107688.jpg);
+        }
+	</style>
+
+	<script defer src='/dist/sml-editor.min.js'></script>
+</head>
+
+<body>
+	<sml-editor auto-resize class="editor"></sml-editor>
+
+    <script type="text/javascript">
+        let editor = document.querySelector('sml-editor');
+        editor.addEventListener('change', (e) => {
+            console.log(e.detail);
+        });
+    </script>
+</body>
+</html>
