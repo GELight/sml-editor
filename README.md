@@ -7,11 +7,11 @@ Provides a simple web component for sml editing in browser.
 For using SML as runtime build in your browser you can use the latest version with:
 
 ```html
-<script src="https://unpkg.com/@gelight/sml-client"></script>
+<script src="https://unpkg.com/@gelight/sml-editor"></script>
 ```
 or
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@gelight/sml-client"></script>
+<script src="https://cdn.jsdelivr.net/npm/@gelight/sml-editor"></script>
 ```
 
 ## Using
