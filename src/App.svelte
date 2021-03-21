@@ -94,6 +94,8 @@
 		white-space: pre-wrap;
 		outline: none;
 		tab-size: var(--sml-editor-tab-size);
+		-moz-tab-size: var(--sml-editor-tab-size);
+    	-o-tab-size: var(--sml-editor-tab-size);
 		width: 100%;
 		max-height: var(--sml-editor-max-height);
 		height: var(--sml-editor-height);
