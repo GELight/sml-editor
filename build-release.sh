@@ -20,5 +20,5 @@ else
     git push
     git tag -a v$RELEASE_VERSION -m "Release build v$RELEASE_VERSION"
     git push --tags
-    npm publish
+    npm publish --access public
 fi

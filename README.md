@@ -2,6 +2,18 @@
 
 Provides a simple web component for sml editing in browser.
 
+## CDN
+
+For using SML as runtime build in your browser you can use the latest version with:
+
+```html
+<script src="https://unpkg.com/@gelight/sml-client"></script>
+```
+or
+```html
+<script src="https://cdn.jsdelivr.net/npm/@gelight/sml-client"></script>
+```
+
 ## Using
 
 Using the component in your template
