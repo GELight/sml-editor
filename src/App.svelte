@@ -8,8 +8,9 @@
 
 	let editor;
 
-	const keyup = (e) => {
+	const keydown = (e) => {
 		const elm = e.target;
+
 		if (e.keyCode === 9 || e.key === 'Tab') {
 			e.preventDefault();
 			
@@ -27,22 +28,16 @@
 			let lineIndentation = getLineIndentation(elm)
 			let start = elm.selectionStart
 			let end = elm.selectionEnd
-			
-			elm.value = elm.value.substring(0, start) +
-				"\n" + lineIndentation + elm.value.substring(end)
+		
+			elm.value = elm.value.substring(0, start) + "\n" + lineIndentation + elm.value.substring(end)
 
 			let cursorPos = start + 1 + lineIndentation.length
 			elm.selectionStart = cursorPos
 			elm.selectionEnd = cursorPos
 		}
-		
-		if ('auto-resize' in $$props) {
-			setTimeout(() => {
-				editor.style.height = "auto";
-				editor.style.height = (editor.scrollHeight)+"px";
-			}, 0)
-		}
+	}
 
+	const keyup = (e) => {
 		isAutoResize();
 		scrollToBottom(e)
 		
@@ -86,7 +81,7 @@
 	}
 </script>
 
-<textarea on:keyup="{keyup}" bind:this="{editor}" bind:value="{value}"></textarea>
+<textarea on:keydown="{keydown}" on:keyup="{keyup}" bind:this="{editor}" bind:value="{value}"></textarea>
 
 <style>
 	:host {
