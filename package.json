@@ -1,8 +1,28 @@
 {
   "name": "@gelight/sml-editor",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "description": "Web component for a simple SML editor",
   "unpkg": "dist/sml-editor.min.js",
   "jsdelivr": "dist/sml-editor.min.js",
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/GELight/sml-editor.git"
+  },
+  "keywords": [
+      "ReliableTxt",
+      "WhitespaceSV",
+      "SimpleML",
+      "SML",
+      "Simple",
+      "Markup",
+      "Language"
+  ],
+  "author": "Mario Linz",
+  "license": "MIT",
+  "bugs": {
+      "url": "https://github.com/GELight/sml-editor/issues"
+  },
+  "homepage": "https://github.com/GELight/sml-editor#readme",
   "scripts": {
     "build": "rollup -c && cp -Rf public/dist .",
     "dev": "rollup -c -w",
