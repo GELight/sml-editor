@@ -1,6 +1,6 @@
 {
   "name": "@gelight/sml-editor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "unpkg": "dist/sml-editor.min.js",
   "jsdelivr": "dist/sml-editor.min.js",
   "scripts": {
